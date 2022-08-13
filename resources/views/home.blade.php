@@ -13,7 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    <form action="http://3.27.12.201/test/" method="post">
+                        <input type="hidden" name="login" value="loggedin" />
+                        <input type="submit" name="atp" value="ATP Page" class="btn btn-primary"/>
+                    </form>
+                    </br>
+                    <hr>
                     {{ __('You are logged in!') }}
                 </div>
             </div>
